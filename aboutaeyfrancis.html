@@ -9,37 +9,39 @@
   
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
+.w3-row-padding img {margin-bottom: 12px} /* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;} /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px} /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
   
 <body class="w3-black">
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <img src="/w3images/avatar_smoke.jpg" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center"><!-- Icon Bar (Sidebar - hidden on small screens) -->
+<!-- <img src="/w3images/avatar_smoke.jpg" style="width:100%"> Avatar image in top left corner -->
+<a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+<i class="fa fa-home w3-xxlarge"></i>
+ 
+<!-- Home side button-->  
+<p>HOME</p> 
+</a>
+<a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+<i class="fa fa-user w3-xxlarge"></i>
+
+<!--About side button-->
+<p>ABOUT</p>
+</a>
+<a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+<i class="fa fa-eye w3-xxlarge"></i>
     
-     <p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-  <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-  <i class="fa fa-eye w3-xxlarge"></i>
-    <p>Projects</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-  <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
+<!--Projects side button-->  
+<p>Projects</p>
+</a>
+<a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+<i class="fa fa-envelope w3-xxlarge"></i>
+
+<!--Contact side button-->  
+<p>CONTACT</p>
+</a>
 </nav>
 
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
@@ -52,40 +54,42 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   </div>
 </div>
 
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-<header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">About</span>Me,</h1>
-    <p>Anna Francis</p>
+<!-- Header/Home -->
+<header>
+ <div class="w3-padding-large" id="main">
+ <header class="w3-container w3-padding-32 w3-center w3-black" id="home"> 
+ <h1 class="w3-jumbo"><span class="w3-hide-small">About</span>Me</h1> 
+ <p>by Anna Francis</p>
     
 <!-- Click here button-->  
-    <p id="demo" style="display:none">Hi there!</p>
-    <button type="button" 
-    onclick="document.getElementById('demo').style.display='block'">Click Here!</button>
+ <p id="demo" style="display:none">Hi there!</p>
+ <button type="button" 
+ onclick="document.getElementById('demo').style.display='block'">Click Here!</button>
   
 <!--Header Image-->
-    <img src="currents.jpg" class="w3-image" width="992" height="1108">
-  </header>
+ <img src="currents.jpg" class="w3-image" width="992" height="1108">
+</header>
 
 <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">About me</h2>
-  <hr style="width:200px" class="w3-opacity">
-    <p>My name is Anna Francis. To briefly introduce myself to you, I enjoy listening to indie, funk rock, and art rock music, but dislike listening to classical and country music. I've played clarinet for two years in my middle school concert band as well as jazz band for a year. In highschool, I switched to the tenor saxophone and played in one of the jazz bands called "Out of the Box." As much as I enjoy listening and playing music, I also enjoy woodworking. Last year, I built a pintograph and a ukulele in my school's woods shop. I am very excited to have enrolled in the Girls Who Code program and look forward to the rest of the summer. Besides learning a bit of Processing before and coding my pintograph on Desmos, I have little experience with coding. So far, I enjoy it very much.    </p>
-    <h3 class="w3-padding-16 w3-text-light-grey">My Passions</h3>
-    <p class="w3-wide">Music</p>
-  <div class="w3-white">
-  <div class="w3-dark-grey" style="height:28px;width:95%"></div>
-  </div>
-    <p class="w3-wide">Photography</p>
-  <div class="w3-white">
-  <div class="w3-dark-grey" style="height:28px;width:85%"></div>
-  </div>
-    <p class="w3-wide">Math</p>
-  <div class="w3-white">
-  <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-  </div><br>
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+ <h2 class="w3-text-light-grey">About me</h2>
+ <hr style="width:200px" class="w3-opacity">
+ <p>My name is Anna Francis. To briefly introduce myself to you, I enjoy listening to indie, funk rock, and art rock music, but dislike listening to classical and country music. I've played clarinet for two years in my middle school concert band as well as jazz band for a year. In highschool, I switched to the tenor saxophone and played in one of the jazz bands called "Out of the Box." As much as I enjoy listening and playing music, I also enjoy woodworking. Last year, I built a pintograph and a ukulele in my school's woods shop. I am very excited to have enrolled in the Girls Who Code program and look forward to the rest of the summer. Besides learning a bit of Processing before and coding my pintograph on Desmos, I have little experience with coding. So far, I enjoy it very much.    </p>
+   
+<!--Horizontal bars-->   
+ <h3 class="w3-padding-16 w3-text-light-grey">My Passions</h3>
+ <p class="w3-wide">Music</p>
+<div class="w3-white">
+<div class="w3-dark-grey" style="height:28px;width:95%"></div>
+</div>
+ <p class="w3-wide">Photography</p>
+<div class="w3-white">
+<div class="w3-dark-grey" style="height:28px;width:85%"></div>
+</div>
+ <p class="w3-wide">Math</p>
+<div class="w3-white">
+<div class="w3-dark-grey" style="height:28px;width:80%"></div>
+</div><br>
     
   <!--Misc Details Panel-->
   <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
