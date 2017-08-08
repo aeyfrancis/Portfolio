@@ -2,6 +2,11 @@
 <html>                     
 <head>                  
 <style>
+  #grad1 {
+    height: 200px;
+    background: maroon; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(maroon, white);} /* For Safari 5.1 to 6.0 */
+   
   body {background-color:lightgrey;)
   h1 {color: black;
       text-align: center;}
@@ -16,8 +21,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body>
 
+<body>
+<div id="grad1"></div> <!--gradient banner-->
 <div class="container">
   <h1>Open Hands</h1>  
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
